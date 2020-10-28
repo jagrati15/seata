@@ -36,12 +36,12 @@ import java.util.List;
  */
 class DruidSQLRecognizerFactoryImpl implements SQLRecognizerFactory {
     @Override
-    public List<SQLRecognizer> create(String sql, String dbType) {
+    /*public List<SQLRecognizer> create(String sql, String dbType) {
         List<SQLStatement> asts = SQLUtils.parseStatements(sql, dbType);
         if (CollectionUtils.isEmpty(asts)) {
             throw new UnsupportedOperationException("Unsupported SQL: " + sql);
         }
-        /*if (asts.size() > 1 && !(asts.stream().allMatch(statement -> statement instanceof SQLUpdateStatement)
+        if (asts.size() > 1 && !(asts.stream().allMatch(statement -> statement instanceof SQLUpdateStatement)
                 || asts.stream().allMatch(statement -> statement instanceof SQLDeleteStatement))) {
             System.out.println("11111111111111111111111" + asts.size());
             System.out.println("22222222222222222222222" + asts.stream().allMatch(statement -> statement instanceof SQLUpdateStatement));
