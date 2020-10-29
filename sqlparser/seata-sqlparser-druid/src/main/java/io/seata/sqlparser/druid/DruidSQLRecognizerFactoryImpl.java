@@ -51,16 +51,16 @@ class DruidSQLRecognizerFactoryImpl implements SQLRecognizerFactory {
                 System.out.println("33333333333333333333333: instanceof SQLUpdateStatement");
             } else {
                 System.out.println("33333333333333333333333: NOT instanceof SQLUpdateStatement");
-            }*/
-            System.out.println("33333333333333333333333" + statement -> (statement instanceof SQLUpdateStatement));
+            }
+            System.out.println("33333333333333333333333" + statement -> (statement instanceof SQLUpdateStatement));*/
             System.out.println("44444444444444444444444" + asts.stream().allMatch(statement -> statement instanceof SQLDeleteStatement));
             /*if (statement -> statement instanceof SQLDeleteStatement) {
                 System.out.println("555555555555555555555: instanceof SQLUpdateStatement");
             } else {
                 System.out.println("555555555555555555555: NOT instanceof SQLUpdateStatement");
-            }*/
+            }
             System.out.println("55555555555555555555555");
-            System.out.println(statement -> statement instanceof SQLDeleteStatement);
+            System.out.println(statement -> statement instanceof SQLDeleteStatement);*/
             System.out.println("ONLY SUPPORT SAME TYPE (UPDATE OR DELETE) MULTI SQL");
             throw new UnsupportedOperationException("ONLY SUPPORT SAME TYPE (UPDATE OR DELETE) MULTI SQL -" + sql);
         }
