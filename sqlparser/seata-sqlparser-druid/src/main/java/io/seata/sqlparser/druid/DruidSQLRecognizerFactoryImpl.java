@@ -45,9 +45,9 @@ class DruidSQLRecognizerFactoryImpl implements SQLRecognizerFactory {
                 || asts.stream().allMatch(statement -> statement instanceof SQLDeleteStatement))) {
             System.out.println("11111111111111111111111" + asts.size());
             System.out.println("22222222222222222222222" + asts.stream().allMatch(statement -> statement instanceof SQLUpdateStatement));
-            System.out.println("33333333333333333333333");
+            /*System.out.println("33333333333333333333333");
             System.out.println(statement -> statement instanceof SQLUpdateStatement);
-            /*if (statement -> statement instanceof SQLUpdateStatement) {
+            if (statement -> statement instanceof SQLUpdateStatement) {
                 System.out.println("33333333333333333333333: instanceof SQLUpdateStatement");
             } else {
                 System.out.println("33333333333333333333333: NOT instanceof SQLUpdateStatement");
