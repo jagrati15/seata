@@ -46,8 +46,8 @@ public class SQLVisitorFactory {
      * @return the sql recognizer
      */
     public static List<SQLRecognizer> get(String sql, String dbType) {
-        System.out.println("ONLY SQL" + sql);
-        System.out.println("ONLY database" + dbType);
+        System.out.println("ONLY SQL = " + sql);
+        System.out.println("ONLY database = " + dbType);
         return SQL_RECOGNIZER_FACTORY.create(sql, dbType);
     }
 
