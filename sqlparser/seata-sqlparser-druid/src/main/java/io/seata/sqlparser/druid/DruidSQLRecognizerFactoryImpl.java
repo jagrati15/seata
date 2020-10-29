@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-/*package io.seata.sqlparser.druid;
+package io.seata.sqlparser.druid;
 
 import com.alibaba.druid.sql.SQLUtils;
 import com.alibaba.druid.sql.ast.SQLStatement;
@@ -34,7 +34,7 @@ import java.util.List;
  * @author sharajava
  * @author ggndnn
  */
-/*class DruidSQLRecognizerFactoryImpl implements SQLRecognizerFactory {
+class DruidSQLRecognizerFactoryImpl implements SQLRecognizerFactory {
     @Override
     public List<SQLRecognizer> create(String sql, String dbType) {
         List<SQLStatement> asts = SQLUtils.parseStatements(sql, dbType);
@@ -47,18 +47,18 @@ import java.util.List;
             System.out.println("22222222222222222222222" + asts.stream().allMatch(statement -> statement instanceof SQLUpdateStatement));
             System.out.println("33333333333333333333333");
             System.out.println(statement -> statement instanceof SQLUpdateStatement);
-            if (statement -> statement instanceof SQLUpdateStatement) {
+            /*if (statement -> statement instanceof SQLUpdateStatement) {
                 System.out.println("33333333333333333333333: instanceof SQLUpdateStatement");
             } else {
                 System.out.println("33333333333333333333333: NOT instanceof SQLUpdateStatement");
-            }
+            }*/
             System.out.println("33333333333333333333333" + statement -> (statement instanceof SQLUpdateStatement));
             System.out.println("44444444444444444444444" + asts.stream().allMatch(statement -> statement instanceof SQLDeleteStatement));
-            if (statement -> statement instanceof SQLDeleteStatement) {
+            /*if (statement -> statement instanceof SQLDeleteStatement) {
                 System.out.println("555555555555555555555: instanceof SQLUpdateStatement");
             } else {
                 System.out.println("555555555555555555555: NOT instanceof SQLUpdateStatement");
-            }
+            }*/
             System.out.println("55555555555555555555555");
             System.out.println(statement -> statement instanceof SQLDeleteStatement);
             System.out.println("ONLY SUPPORT SAME TYPE (UPDATE OR DELETE) MULTI SQL");
@@ -87,4 +87,4 @@ import java.util.List;
         }
         return recognizers;
     }
-}*/
+}
