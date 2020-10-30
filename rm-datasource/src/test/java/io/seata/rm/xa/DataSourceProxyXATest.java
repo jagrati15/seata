@@ -16,8 +16,9 @@
 package io.seata.rm.xa;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.mysql.cj.jdbc.JDBC4MySQLConnection;
-/*import com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper;*/
+import com.mysql.cj.jdbc.JdbcConnection
+/*import com.mysql.cj.jdbc.JDBC4MySQLConnection;
+import com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper;*/
 import com.mysql.cj.jdbc.optional.JDBC4ConnectionWrapper;
 import io.seata.core.context.RootContext;
 import io.seata.rm.datasource.mock.MockDataSource;
@@ -59,7 +60,8 @@ public class DataSourceProxyXATest {
     public void testGetConnection() throws SQLException {
         // Mock
         Driver driver = Mockito.mock(Driver.class);
-        JDBC4MySQLConnection connection = Mockito.mock(JDBC4MySQLConnection.class);
+        /*JDBC4MySQLConnection connection = Mockito.mock(JDBC4MySQLConnection.class);*/
+        JdbcConnection connection = Mockito.mock(JdbcConnection.class);
         Mockito.when(connection.getAutoCommit()).thenReturn(true);
         DatabaseMetaData metaData = Mockito.mock(DatabaseMetaData.class);
         Mockito.when(metaData.getURL()).thenReturn("jdbc:mysql:xxx");
