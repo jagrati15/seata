@@ -18,7 +18,7 @@ package io.seata.rm.xa;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.mysql.cj.jdbc.JDBC4MySQLConnection;
 /*import com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper;*/
-import com.mysql.cj.jdbc.JDBC4ConnectionWrapper;
+import com.mysql.cj.jdbc.optional.JDBC4ConnectionWrapper;
 import io.seata.core.context.RootContext;
 import io.seata.rm.datasource.mock.MockDataSource;
 import io.seata.rm.datasource.xa.ConnectionProxyXA;
