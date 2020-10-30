@@ -16,7 +16,7 @@
 package io.seata.rm.xa;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.mysql.cj.jdbc.JdbcConnection
+import com.mysql.cj.jdbc.JdbcConnection;
 /*import com.mysql.cj.jdbc.JDBC4MySQLConnection;
 import com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper;*/
 import com.mysql.cj.jdbc.optional.JDBC4ConnectionWrapper;
