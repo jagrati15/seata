@@ -368,6 +368,7 @@ public class EnhancedServiceLoader {
         private S getExtensionInstance(ExtensionDefinition definition, ClassLoader loader, Class[] argTypes,
                                        Object[] args) {
             if (definition == null) {
+                System.out.println("11111111111111111111111111111111111111111111111111111");
                 throw new EnhancedServiceNotFoundException("not found service provider for : " + type.getName());
             }
             if (Scope.SINGLETON.equals(definition.getScope())) {
