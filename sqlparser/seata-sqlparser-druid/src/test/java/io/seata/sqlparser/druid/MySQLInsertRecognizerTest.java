@@ -169,6 +169,8 @@ public class MySQLInsertRecognizerTest extends AbstractRecognizerTest {
             System.out.println("4444444444444444444444444444444444444444TEST");
 
             MySQLInsertRecognizer mysqlInsertRecognizer = new MySQLInsertRecognizer(s, sqlInsertStatement);
+            System.out.println("5555555555555555555555555555555555555TEST= " + Collections.singletonList(pkIndex));
+            System.out.println("666666666666666666666666666666666666TEST=" + mysqlInsertRecognizer.getInsertRows(Collections.singletonList(pkIndex)));
             mysqlInsertRecognizer.getInsertRows(Collections.singletonList(pkIndex));
         });
         System.out.println("222222222222222222222222222222222TEST");
