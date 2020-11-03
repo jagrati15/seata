@@ -13,8 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.alibaba.druid.sql.dialect.mysql.visitor;
-/*package io.seata.sqlparser.druid;*/
+package io.seata.sqlparser.druid;
 
 import java.util.Arrays;
 import java.util.Collections;
