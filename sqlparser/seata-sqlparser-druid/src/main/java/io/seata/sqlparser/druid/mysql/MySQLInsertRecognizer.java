@@ -109,6 +109,7 @@ public class MySQLInsertRecognizer extends BaseMySQLRecognizer implements SQLIns
 
     @Override
     public List<List<Object>> getInsertRows(Collection<Integer> primaryKeyIndex) {
+        System.out.println("7777777777777777777777777777777777777777777777777777");
         List<SQLInsertStatement.ValuesClause> valuesClauses = ast.getValuesList();
         List<List<Object>> rows = new ArrayList<>(valuesClauses.size());
         for (SQLInsertStatement.ValuesClause valuesClause : valuesClauses) {
