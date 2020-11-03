@@ -158,6 +158,7 @@ public class MySQLInsertRecognizerTest extends AbstractRecognizerTest {
         List<List<Object>> insertRows = recognizer.getInsertRows(Collections.singletonList(pkIndex));
         System.out.println("111111111111111111111111111111111TEST");
         Assertions.assertEquals(1, insertRows.size());
+        System.out.println("33333333333333333333333333333333333TEST");
 
         //test for exception
         Assertions.assertThrows(SQLParsingException.class, () -> {
