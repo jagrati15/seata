@@ -166,6 +166,7 @@ public class MySQLInsertRecognizerTest extends AbstractRecognizerTest {
             List<SQLStatement> sqlStatements = SQLUtils.parseStatements(s, JdbcConstants.MYSQL);
             SQLInsertStatement sqlInsertStatement = (SQLInsertStatement)sqlStatements.get(0);
             sqlInsertStatement.getValuesList().get(0).getValues().set(pkIndex, new MySqlOrderingExpr());
+            System.out.println("4444444444444444444444444444444444444444TEST");
 
             MySQLInsertRecognizer mysqlInsertRecognizer = new MySQLInsertRecognizer(s, sqlInsertStatement);
             mysqlInsertRecognizer.getInsertRows(Collections.singletonList(pkIndex));
