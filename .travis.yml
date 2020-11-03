@@ -1,6 +1,5 @@
 language: java
 sudo: false # faster builds
-dist: bionic
 
 arch:
   - amd64
